@@ -6,10 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Client Connections Consulting - Tools for Defense Lawyers</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
     <header>
@@ -25,7 +21,7 @@
         </nav>
     </header>
 
-    <section id="hero">
+    <section id="hero" class="parallax">
         <div class="hero-content">
             <h2>Enabling timely access to new clientele</h2>
             <p>Tools for defense lawyers to increase client bases while reducing the time to do so</p></br>
@@ -47,7 +43,7 @@
         </div>
     </section>
 
-    <section id="about">
+    <section id="about" class="parallax">
         <div class="container">
             <h2>About Us</h2>
             <p>Our goal is to deliver solutions that enhance lead acquisition while seamlessly integrating into your existing workflow. We focus on providing tools and strategies that complement your current processes, ensuring a smooth and efficient transition without disruption. By aligning our solutions with your operational needs, we help you optimize lead generation, saving time and improving overall productivity.</p>
@@ -127,12 +123,6 @@
             margin-bottom: 20px;
         }
 
-        #about {
-            background-image: url(buildings-federal-court-house.jpg);
-            background-size: cover;
-            background-position: center;
-        }
-
         #about h2{
             color: #333;
         }
@@ -148,6 +138,12 @@
 
         .logo h1{
             margin-bottom: 20px;
+        }
+
+        .parallax{
+            background-image: url(buildings-federal-court-house.jpg) fixed;
+            background-size: cover;
+            background-position: center;
         }
 
         .cta-button {
@@ -227,13 +223,6 @@
         h2{
             font-size: 36px;
             margin-bottom: 40px;
-        }
-
-        .domine-font {
-            font-family: "Domine", serif;
-            font-optical-sizing: auto;
-            font-weight: 400;
-            font-style: normal;
         }
 
         @font-face {
